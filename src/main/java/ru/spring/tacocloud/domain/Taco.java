@@ -1,6 +1,7 @@
 package ru.spring.tacocloud.domain;
 
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
@@ -10,6 +11,7 @@ import java.util.List;
 
 @Data
 @Entity
+@NoArgsConstructor
 public class Taco {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)

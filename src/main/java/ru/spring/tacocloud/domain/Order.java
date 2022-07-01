@@ -1,6 +1,7 @@
 package ru.spring.tacocloud.domain;
 
 import lombok.Data;
+import lombok.NoArgsConstructor;
 import org.hibernate.validator.constraints.CreditCardNumber;
 import org.hibernate.validator.constraints.Length;
 
@@ -14,6 +15,7 @@ import java.util.Date;
 import java.util.List;
 
 @Data
+@NoArgsConstructor
 @Entity
 @Table(name = "Taco_Order")
 public class Order {
